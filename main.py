@@ -27,4 +27,9 @@ def root(message: str, idi, name: Optional[str] = None):
 
 @app.post("/base")
 def root(requests: Blog):
-    return {"message": f'"{requests.Name} deepansu"'}
+    return {"message": f'"{requests.Name} deepanshu"'}
+
+
+@app.post("/base2")
+def root(requests: Blog):
+    return {"message": f'"{requests.Name} deepanshu"'}
