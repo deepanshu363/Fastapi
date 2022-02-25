@@ -25,3 +25,9 @@ def root(requests: schemas.Blog, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(new_blog)
     return new_blog
+
+
+@app.get("/all")
+def root(db: Session = Depends(get_db)):
+    blogs = db.query(models.Blog).filter(models.Blog.id == ).first()
+    return blogs
