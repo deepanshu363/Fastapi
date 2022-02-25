@@ -1,5 +1,8 @@
 from fastapi import FastAPI
 
-app = FastAPI();
+app = FastAPI()
 
-print("hello")
+
+@app.get("/")
+def root():
+    return {"message": "Hello World"}
