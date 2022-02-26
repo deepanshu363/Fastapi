@@ -3,4 +3,4 @@ from pydantic import BaseModel
 
 class Blog(BaseModel):
     title: str
-    Name: "str"
+    Name: str
